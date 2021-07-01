@@ -24,11 +24,11 @@
                 <TextBlock Text="1234"/>
             </StatusBarItem>
             <StatusBarItem>
-                <ProgressBar Width="120" Height="14" Value="30"/>
+                <ProgressBar Width="120" Height="14" Value="30" />
             </StatusBarItem>
         </StatusBar>
         <TabControl>
-            <TabItem Header="Вкладка 1">
+            <TabItem Header="Вкладка 1" Height="26" Margin="-2,0,-2,0" VerticalAlignment="Bottom">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="63*"/>
