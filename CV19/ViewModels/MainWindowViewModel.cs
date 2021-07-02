@@ -10,6 +10,7 @@ namespace CV19.ViewModels
 {
     internal class MainWindowViewModel : ViewModel
     {
+        
         #region Заголовок окна
 
         private string _Title= "Анализ статистики CV19";
