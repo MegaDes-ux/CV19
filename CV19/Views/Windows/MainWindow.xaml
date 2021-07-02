@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" mc:Ignorable="d"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.fontawesome.com/icons/"
         xmlns:vm="clr-namespace:CV19.ViewModels"
         xmlns:cmd="clr-namespace:CV19.Infrastructure.Commands"
         xmlns:local="clr-namespace:CV19"
@@ -16,7 +17,7 @@
     </Window.Resources>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Файл">
+            <MenuItem Header="Файл" >
                 <!--<MenuItem Header="Выход" Command="{Binding CloseApplicationCommand}"/> через модель-представления -->  
                 <!--<MenuItem Header="Выход">  // через команду  внутри контейнера menuitem
                     <MenuItem.Command>
@@ -38,7 +39,15 @@
             </StatusBarItem>
         </StatusBar>
         <TabControl>
-            <TabItem Header="Вкладка 1" Height="26" Margin="-2,0,-2,0" VerticalAlignment="Bottom">
+            <TabItem Height="26" Margin="-2,0,-2,0" VerticalAlignment="Bottom">
+                <TabItem.Header> <!--расширяем заголовок вкладки, т.к. это объект!-->
+                    <StackPanel Orientation="Horizontal">
+                        <!--<Image Source=""></Image>  для вставки картинки--> 
+                        <fa:ImageAwesome Icon="Regular_File" Height="13" Margin="0,0,5,0" 
+                                         Foreground="Red"></fa:ImageAwesome>
+                        <TextBlock Text="Вкладка 1 "></TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="63*"/>
