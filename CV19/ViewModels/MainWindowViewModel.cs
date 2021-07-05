@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using CV19.Infrastructure.Commands;
 using CV19.ViewModels.Base;
 using CV19.Models;
